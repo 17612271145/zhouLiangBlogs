@@ -38,4 +38,4 @@ article>img{
   height: 48px;
 }
 </style>
-<!--@include: ./docs/components/test.md-->
+<!--@include: ./doc/components/test.md-->

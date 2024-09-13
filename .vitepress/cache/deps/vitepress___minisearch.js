@@ -200,14 +200,14 @@ var SearchableMap = class _SearchableMap {
     return new _SearchableMap(node, prefix);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/clear
    */
   clear() {
     this._size = void 0;
     this._tree.clear();
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/delete
    * @param key  Key to delete
    */
   delete(key) {
@@ -215,14 +215,14 @@ var SearchableMap = class _SearchableMap {
     return remove(this._tree, key);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/entries
    * @return An iterator iterating through `[key, value]` entries.
    */
   entries() {
     return new TreeIterator(this, ENTRIES);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/forEach
    * @param fn  Iteration function
    */
   forEach(fn) {
@@ -262,7 +262,7 @@ var SearchableMap = class _SearchableMap {
     return fuzzySearch(this._tree, key, maxEditDistance);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/get
    * @param key  Key to get
    * @return Value associated to the key, or `undefined` if the key is not
    * found.
@@ -272,7 +272,7 @@ var SearchableMap = class _SearchableMap {
     return node !== void 0 ? node.get(LEAF) : void 0;
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/has
    * @param key  Key
    * @return True if the key is in the map, false otherwise
    */
@@ -281,14 +281,14 @@ var SearchableMap = class _SearchableMap {
     return node !== void 0 && node.has(LEAF);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/keys
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/keys
    * @return An `Iterable` iterating through keys
    */
   keys() {
     return new TreeIterator(this, KEYS);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/set
    * @param key  Key to set
    * @param value  Value to associate to the key
    * @return The {@link SearchableMap} itself, to allow chaining
@@ -303,7 +303,7 @@ var SearchableMap = class _SearchableMap {
     return this;
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/size
    */
   get size() {
     if (this._size) {
@@ -373,14 +373,14 @@ var SearchableMap = class _SearchableMap {
     return value;
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/values
    * @return An `Iterable` iterating through values.
    */
   values() {
     return new TreeIterator(this, VALUES);
   }
   /**
-   * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator
+   * @see https://developer.mozilla.org/en-US/doc/Web/JavaScript/Reference/Global_Objects/Map/@@iterator
    */
   [Symbol.iterator]() {
     return this.entries();

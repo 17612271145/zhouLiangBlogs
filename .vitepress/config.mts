@@ -15,11 +15,11 @@ export default defineConfig({
       { text: '第三方文档', items:[
         {
           text: 'api文档',
-          link: '/docs/api/index'
+          link: '/doc/api/index'
         },
         {
           text: 'core文档',
-          link: '/docs/core/index'
+          link: '/doc/core/index'
         },
       ]}
     ],

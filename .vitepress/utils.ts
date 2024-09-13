@@ -9,7 +9,7 @@ export const getSideBarList = (pathname: string) => {
         text: '基础篇',
         collapsed: true,
         items: [
-          { text: '基础篇', link: '/docs/basic/index' },
+          { text: '基础篇', link: '/doc/basic/index' },
           { text: '基础篇1', link: '/basic/basic1' },
           { text: '基础篇2', link: '/basic/basic2' }
         ]
