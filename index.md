@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "记录点滴"
-  text: "学习成长且快乐"
-  tagline: 快速访问
+  name: "JEFF的BLOCK。"
+  # text: "我们虽然走的很慢，但从未停止过脚步。"
+  tagline: 虽然走的很慢，但从未停止过脚步。
   image:
     src: /learn.svg
     alt: Chrome 浏览器插件
